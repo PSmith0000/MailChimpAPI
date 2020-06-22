@@ -1,0 +1,7 @@
+Update Lists gets implemented by the application that uses the API
+Passed into ExecCommand as a function pointer with the signature method_name(object data) and you do
+(data as DEFINED_OBJECT).X.
+
+Currentlly Supported Cmds
+GetLists (No Args)
+GetMembers (Arg0: ListID) where the list id is obtained from call ExecCommand(Command.GetLists, FuncPointer, new object[] {"ListID"});
